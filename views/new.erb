@@ -1,12 +1,21 @@
-<form action="/create" method="post">
-  <label for="name">Recipe title</label><br>
-  <input type="text" id="name" name="name"><br>
-  <label for="description">Description</label><br>
-  <input type="text" id="description" name="description"><br><br>
-  <label for="prep_time">Prep time (minutes)</label><br>
-  <input type="text" id="prep_time" name="prep_time"><br>
-  <label for="rating">Rating</label><br>
-  <input type="number" id="rating" name="rating" min="1" max="5"><br>
+<p>Add new recipe:</p>
 
-  <input type="submit" value="Submit">
+<form action="/create" method="post">
+<div class="form-group">
+  <label for="name">Recipe title</label>
+  <input type="text" id="name" name="name" class="form-control">
+</div>
+<div class="form-group">
+  <label for="description">Description</label>
+  <input type="text" id="description" name="description" class="form-control">
+</div>
+<div class="form-group">
+  <label for="prep_time">Prep time (minutes)</label>
+  <input type="text" id="prep_time" name="prep_time" class="form-control">
+</div>
+<div class="form-group">
+  <label for="rating">Rating</label>
+  <input type="number" id="rating" name="rating" min="1" max="5" class="form-control">
+</div>
+  <input type="submit" value="Submit" class="btn btn-primary">
 </form>
