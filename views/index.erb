@@ -2,9 +2,9 @@
 
 Under the list of recipes, add a navigation link (<a>) to the /new url, that we’ll use for the create user story. %>
 <h2>My Recipes</h2>
-<% @recipes.each do |recipe| %>
+<% @recipes.each_with_index do |recipe, i| %>
   <li>
-    <%= recipe.name %>
+    <%= recipe.name %> <a href="/destroy/<%= i %>">destroy</a>
   </li>
 <% end %>
 

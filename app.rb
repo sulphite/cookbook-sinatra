@@ -36,6 +36,11 @@ post "/create" do
   redirect to('/')
 end
 
+get "/destroy/:index" do
+  cookbook.destroy(params[:index].to_i)
+  redirect to('/')
+end
+
 get "/team/:username" do
   puts params[:username]
   "The username is #{params[:username]}"
