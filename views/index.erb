@@ -1,0 +1,11 @@
+<%# At the root of your web app (at the / url), you should display your cookbook’s recipes in an unordered list.
+
+Under the list of recipes, add a navigation link (<a>) to the /new url, that we’ll use for the create user story. %>
+<h2>My Recipes</h2>
+<% @recipes.each do |recipe| %>
+  <li>
+    <%= recipe.name %>
+  </li>
+<% end %>
+
+<a href="/new">new recipe</a>
